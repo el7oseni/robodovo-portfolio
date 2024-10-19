@@ -1,68 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light background for the body */
-  }
-  
-  header {
-    background-color: #007BFF; /* Blue */
-    color: white; /* White text */
-    text-align: center;
-    padding: 20px;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white; /* White for sections */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #003366; /* Dark blue for headings */
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #FF8C00; /* Dark orange */
-    color: white; /* White text */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  .image-gallery {
-    display: flex;
-    flex-direction: column; /* Stack images and captions vertically */
-    align-items: center; /* Center align items */
-  }
-  
-  .image-gallery img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #FFA500; /* Light orange border */
-  }
-  
-  .team-member {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .team-member img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007BFF; /* Darker Blue */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #FF8C00; /* A brighter orange */
+  color: white;
+  position: relative; /* Changed to relative */
+  width: 100%;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping for better responsiveness */
+}
+
+.member {
+  text-align: center;
+  margin: 10px;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #007BFF; /* Optional border color */
+}
+
+/* Optional styling for member names and roles */
+.member p {
+  margin: 5px 0;
+}
