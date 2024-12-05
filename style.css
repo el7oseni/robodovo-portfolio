@@ -9,11 +9,11 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .header-content img {
-  width: 150px; /* Default logo size */
+  width: 120px; /* Default logo size */
   height: auto;
   margin-bottom: 15px;
 }
@@ -30,7 +30,7 @@ header {
 
 @media (max-width: 768px) {
   .header-content img {
-    width: 120px; /* Smaller logo for mobile */
+    width: 100px; /* Smaller logo for mobile */
   }
 
   .header-content h1 {
@@ -63,14 +63,14 @@ h2 {
 /* Image Gallery */
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid layout for desktop */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid layout for desktop */
   gap: 20px;
   justify-items: center;
 }
 
 .image-gallery img {
   width: 100%;
-  max-width: 250px; /* Limit image size */
+  max-width: 300px; /* Limit image size */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -82,11 +82,25 @@ h2 {
   margin-top: 5px;
 }
 
+/* Video Section */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 /* Meet the Team Section */
 .team-member {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for desktop */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid layout for desktop */
   gap: 30px; /* Space between team members */
+  justify-items: center; /* Center-align items */
 }
 
 .member {
