@@ -1,70 +1,118 @@
-/* General Styles */
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
-section {
+header {
+  text-align: center;
   padding: 20px;
-  margin: 20px auto;
+}
+
+.header-content img {
+  width: 150px; /* Default logo size */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.header-content h1 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .header-content img {
+    width: 120px; /* Smaller logo for mobile */
+  }
+
+  .header-content h1 {
+    font-size: 1.8em; /* Adjusted font size for mobile */
+  }
+}
+
+/* Section Styles */
+section {
+  margin: 40px auto;
+  padding: 20px;
   max-width: 1200px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  text-align: center; /* Center-align section titles */
-  font-size: 1.8em;
+  font-size: 2em;
   margin-bottom: 20px;
-  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5em; /* Adjusted for smaller screens */
+  }
 }
 
 /* Image Gallery */
 .image-gallery {
-  display: flex;
-  justify-content: center; /* Center-align the gallery */
-  flex-wrap: wrap; /* Wrap for smaller screens */
-  gap: 20px; /* Space between images */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid layout for desktop */
+  gap: 20px;
+  justify-items: center;
 }
 
 .image-gallery img {
-  width: 200px;
+  width: 100%;
+  max-width: 250px; /* Limit image size */
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-gallery p {
-  text-align: center; /* Center-align captions */
+  text-align: center; /* Center captions */
   font-size: 0.9em;
   margin-top: 5px;
 }
 
-/* Meet the Team */
+/* Meet the Team Section */
 .team-member {
-  display: flex;
-  justify-content: center; /* Center-align members */
-  flex-wrap: wrap; /* Stack for smaller screens */
-  gap: 30px; /* Space between members */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for desktop */
+  gap: 30px; /* Space between team members */
 }
 
 .member {
   text-align: center;
-  max-width: 200px;
 }
 
 .member img {
-  width: 100px; /* Circular photos */
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
 .member p {
   margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .team-member {
+    grid-template-columns: 1fr; /* Stack members vertically for mobile */
+  }
+
+  .member img {
+    width: 100px;
+    height: 100px; /* Smaller images for mobile */
+  }
 }
 
 /* Footer */
@@ -78,22 +126,7 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .team-member {
-    flex-direction: column; /* Stack team members vertically */
-  }
-
-  .member img {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .image-gallery {
-    justify-content: space-evenly; /* Spread images for tablets */
-  }
-
-  .team-member {
-    gap: 20px; /* Reduce spacing for tablets */
+  section {
+    padding: 15px;
   }
 }
