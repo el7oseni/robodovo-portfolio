@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,173 +6,94 @@ body {
   background-color: #f4f4f4;
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex-direction: column; /* Stack logo and text */
-  text-align: center; /* Center-align content */
-  z-index: 1; /* Ensure content is above overlay */
-}
-
-.logo {
-  width: 200px; /* Adjust size as needed */
-  height: auto;
-  margin-bottom: 20px; /* Space between logo and slogan */
-}
-
-header h1 {
-  font-weight: 900;
-}
-
-header {
-  background-image: url('Images/7.jpg'), url('Images/blur.jpg');
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding: 30px 10px; /* Add more spacing */
-  height: auto; /* Adjust height dynamically */
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  color: white;
-  text-align: center;
-}
-
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-}
-
-header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('Images/blur.jpg');
-  background-size: cover;
-  filter: blur(5px);
-  opacity: 0.3;
-}
-
 section {
   padding: 20px;
   margin: 20px auto;
-  max-width: 1200px; /* Restrict width for better readability */
+  max-width: 1200px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  text-align: center; /* Centers the title */
-  font-size: 1.6em; /* Slightly smaller */
-  color: #333; /* Keeps the text color consistent */
-  margin-bottom: 15px; /* Less spacing below */
-  font-weight: bold; /* Makes the title stand out */
+  text-align: center; /* Center-align section titles */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em; /* Slightly smaller text */
-  background-color: #333; /* Darker background for contrast */
-  color: #fff; /* White text for better readability */
-  position: relative;
-  width: 100%;
-}
-
+/* Image Gallery */
 .image-gallery {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* Wrap images for better responsiveness */
+  justify-content: center; /* Center-align the gallery */
+  flex-wrap: wrap; /* Wrap for smaller screens */
+  gap: 20px; /* Space between images */
 }
 
 .image-gallery img {
   width: 200px;
   height: auto;
-  margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-gallery p {
   text-align: center; /* Center-align captions */
-  font-size: 0.9em; /* Slightly smaller font for captions */
-  margin-top: 0; /* Reduce space above captions */
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 
+/* Meet the Team */
 .team-member {
   display: flex;
-  justify-content: center; /* Center items */
-  flex-wrap: wrap; /* Wrap for smaller screens */
-  gap: 20px; /* Add spacing between team members */
+  justify-content: center; /* Center-align members */
+  flex-wrap: wrap; /* Stack for smaller screens */
+  gap: 30px; /* Space between members */
+}
+
+.member {
+  text-align: center;
+  max-width: 200px;
 }
 
 .member img {
+  width: 100px; /* Circular photos */
+  height: 100px;
   border-radius: 50%;
-  width: 120px; /* Adjusted for smaller screens */
-  height: 120px;
-  margin-bottom: 10px; /* Space below images */
+  margin-bottom: 10px;
 }
 
 .member p {
-  margin: 5px 0; /* Add consistent spacing between lines */
-  text-align: center; /* Align all text for better readability */
+  margin: 5px 0;
 }
 
-/* Responsive adjustments */
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  header {
-    padding: 20px;
-  }
-
-  .image-gallery {
-    flex-direction: column; /* Stack images vertically */
-    align-items: center;
-  }
-
-  iframe {
-    width: 100%; /* Make the video responsive */
-    height: auto;
-  }
-
   .team-member {
     flex-direction: column; /* Stack team members vertically */
-    gap: 10px;
   }
 
   .member img {
-    width: 100px; /* Smaller size for team images */
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 }
 
-/* Styles for screens between 768px and 1024px (e.g., tablets) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .image-gallery {
-    justify-content: space-evenly; /* Evenly distribute images */
+    justify-content: space-evenly; /* Spread images for tablets */
   }
 
-  iframe {
-    width: 90%; /* Reduce video width slightly */
-    height: auto;
+  .team-member {
+    gap: 20px; /* Reduce spacing for tablets */
   }
 }
