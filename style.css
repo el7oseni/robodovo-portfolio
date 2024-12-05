@@ -10,21 +10,19 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column; /* Stack logo and text */
+  text-align: center; /* Center-align content */
   z-index: 1; /* Ensure content is above overlay */
 }
 
 .logo {
   width: 200px; /* Adjust size as needed */
   height: auto;
-  margin-right: 50px; /* Space between logo and slogan */
+  margin-bottom: 20px; /* Space between logo and slogan */
 }
 
 header h1 {
   font-weight: 900;
-}
-
-.slogan {
-  text-align: left;
 }
 
 header {
@@ -32,7 +30,8 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
-  height: 300px;
+  padding: 30px 10px; /* Add more spacing */
+  height: auto; /* Adjust height dynamically */
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -65,7 +64,8 @@ header::after {
 
 section {
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 1200px; /* Restrict width for better readability */
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -73,9 +73,9 @@ section {
 
 h2 {
   text-align: center; /* Centers the title */
-  font-size: 1.8em; /* Adjusts the size for readability */
+  font-size: 1.6em; /* Slightly smaller */
   color: #333; /* Keeps the text color consistent */
-  margin-bottom: 20px; /* Adds spacing below the title */
+  margin-bottom: 15px; /* Less spacing below */
   font-weight: bold; /* Makes the title stand out */
 }
 
@@ -86,10 +86,11 @@ ul {
 
 footer {
   text-align: center;
-  padding: 10px;
-  background-color: #FF8C00; /* A brighter orange */
-  color: white;
-  position: relative; /* Changed to relative */
+  padding: 15px;
+  font-size: 0.9em; /* Slightly smaller text */
+  background-color: #333; /* Darker background for contrast */
+  color: #fff; /* White text for better readability */
+  position: relative;
   width: 100%;
 }
 
@@ -107,6 +108,31 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.image-gallery p {
+  text-align: center; /* Center-align captions */
+  font-size: 0.9em; /* Slightly smaller font for captions */
+  margin-top: 0; /* Reduce space above captions */
+}
+
+.team-member {
+  display: flex;
+  justify-content: center; /* Center items */
+  flex-wrap: wrap; /* Wrap for smaller screens */
+  gap: 20px; /* Add spacing between team members */
+}
+
+.member img {
+  border-radius: 50%;
+  width: 120px; /* Adjusted for smaller screens */
+  height: 120px;
+  margin-bottom: 10px; /* Space below images */
+}
+
+.member p {
+  margin: 5px 0; /* Add consistent spacing between lines */
+  text-align: center; /* Align all text for better readability */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   body {
@@ -114,17 +140,7 @@ footer {
   }
 
   header {
-    height: auto;
     padding: 20px;
-  }
-
-  .header-content {
-    flex-direction: column; /* Stack logo and text vertically */
-    text-align: center; /* Center-align text */
-  }
-
-  .logo {
-    margin: 0 auto 20px; /* Center logo and add spacing */
   }
 
   .image-gallery {
