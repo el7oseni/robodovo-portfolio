@@ -109,15 +109,16 @@ footer {
 
 .team-member {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; /* Allows wrapping for better responsiveness */
+  flex-wrap: wrap;
+  justify-content: center; /* Center items on all screen sizes */
+  gap: 20px; /* Add spacing between items */
 }
 
-.member {
-  text-align: center;
-  margin: 10px;
+.member img {
+  width: 120px; /* Reduce size for smaller screens */
+  height: 120px;
 }
+
 
 .member img {
   border-radius: 50%;
