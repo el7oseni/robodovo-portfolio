@@ -72,8 +72,13 @@ section {
 }
 
 h2 {
-  color: #333;
+  text-align: center; /* Centers the title */
+  font-size: 1.8em; /* Adjusts the size for readability */
+  color: #333; /* Keeps the text color consistent */
+  margin-bottom: 20px; /* Adds spacing below the title */
+  font-weight: bold; /* Makes the title stand out */
 }
+
 
 ul {
   list-style-type: disc;
