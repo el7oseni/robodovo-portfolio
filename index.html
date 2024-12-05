@@ -5,112 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RoboDovo Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="header-content">
       <img src="Images/logo.png" alt="RoboDovo Logo" class="logo">
       <div class="slogan">
-        <h1 >Meet RoboDovo</h1>
+        <h1>Meet RoboDovo</h1>
         <p>Your Campus Delivery Solution</p>
         <p>Harnessing AI technology for seamless deliveries across campus.</p>
       </div>
     </div>
   </header>
-
+  
   <section id="overview">
     <h2>Project Overview</h2>
     <p>RoboDovo is an autonomous delivery robot designed to navigate university campuses and deliver items. The robot processes all tasks using a Lenovo ThinkCentre Mini PC, which handles navigation, object recognition, and more.</p>
   </section>
+  
 
   <section id="images">
     <h2>Project Images</h2>
     <div class="image-gallery">
+      <div class="image-item">
         <img src="Images/5.jpg" alt="RoboDovo in Action" id="roboImage">
         <p>RoboDovo in action on campus</p>
+      </div>
+      <div class="image-item">
         <img src="Images/2.jpg" alt="ThinkCentre PC">
         <p>ThinkCentre Mini PC processing unit</p>
+      </div>
+      <div class="image-item">
         <img src="Images/3.jpg" alt="Sensor Array">
         <p>Close-up of sensors (LiDAR, ultrasonic sensors)</p>
+      </div>
+      <div class="image-item">
         <img src="Images/4.jpg" alt="Chassis Design">
         <p>Chassis designed from sustainable MDF material</p>
+      </div>
     </div>
   </section>
+  
 
   <section id="video">
-  <h2>RoboDovo in Action</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1pt5yQzjwQc" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-  <p>Watch RoboDovo navigate the campus!</p>
-</section>
+    <h2>RoboDovo in Action</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/1pt5yQzjwQc" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
+    <p>Watch RoboDovo navigate the campus!</p>
+  </section>
+  
 
   <section id="documentation">
-  <h2>Project Documentation</h2>
-  <p>For a detailed overview of the RoboDovo project, download the full documentation below:</p>
-  <a href="https://github.com/el7oseni/robodovo-portfolio/raw/main/robodovo-doc.pdf" download>Download Documentation</a>
-</section>
-
+    <h2>Project Documentation</h2>
+    <p>For a detailed overview of the RoboDovo project, download the full documentation below:</p>
+    <a href="https://github.com/el7oseni/robodovo-portfolio/raw/main/robodovo-doc.pdf" download>
+      Download Documentation
+    </a>
+  </section>
+  
 
 
   <section id="technologies">
     <h2>Techniques and Technologies</h2>
-    <ul>
-      <li><strong>Hardware</strong>: ThinkCentre Mini PC, LiDAR, Camera, Ultrasonic sensors</li>
-      <li><strong>Software</strong>: ROS, YOLO for object detection, SLAM for mapping</li>
-      <li><strong>Algorithms</strong>: TEB Planner, Dynamic Window Approach for collision avoidance</li>
-      <li><strong>Power</strong>: 12V battery system</li>
-    </ul>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <i class="fas fa-microchip"></i>
+        <h3>Hardware</h3>
+        <p>ThinkCentre Mini PC, LiDAR, Camera, Ultrasonic sensors</p>
+      </div>
+      <div class="tech-item">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Software</h3>
+        <p>ROS, YOLO for object detection, SLAM for mapping</p>
+      </div>
+      <div class="tech-item">
+        <i class="fas fa-code-branch"></i>
+        <h3>Algorithms</h3>
+        <p>TEB Planner, Dynamic Window Approach for collision avoidance</p>
+      </div>
+      <div class="tech-item">
+        <i class="fas fa-battery-full"></i>
+        <h3>Power</h3>
+        <p>12V battery system</p>
+      </div>
+    </div>
   </section>
-
+  
+  
   <section id="team">
     <h2>Meet the Team</h2>
-    <div class="team-member">
-        <div class="member">
-            <img src="Images/hesham.jpg" alt="Hesham Elhoseni">
-            <p>Hesham Elhoseni</p>
-            <p>Project Lead | Robotics Operating System (ROS) Specialist</p>
-            <p>Oversaw project development, integration of ROS, and team management.</p>
-        </div>
-        <div class="member">
-            <img src="Images/shady.jpg" alt="Shady Mohamed">
-            <p>Shady Mohamed</p>
-            <p>AI Engineer | ROS Specialist</p>
-            <p>Focused on AI system design and integration with ROS for autonomous navigation.</p>
-        </div>
-        <div class="member">
-            <img  src="Images/saad.jpg" alt="Saad Salama">
-            <p>Saad Salama</p>
-            <p>AI Engineer | UX Designer & Mobile App Developer</p>
-            <p>Led the design of user experience and developed the mobile application for project control.</p>
-        </div>
-        <div class="member">
-            <img src="Images/sherif.jpg" alt="Sherif Mohamed">
-            <p>Sherif Mohamed</p>
-            <p>AI Engineer | Computer Vision Specialist</p>
-            <p>Responsible for implementing computer vision algorithms for object detection and tracking.</p>
-        </div>
-        <div class="member">
-            <img src="Images/alaa.jpg" alt="Alaa Eldein">
-            <p>Alaa Eldein</p>
-            <p>AI Engineer | Computer Vision Specialist</p>
-            <p>Worked on computer vision systems for real-time obstacle detection and scene recognition.</p>
-        </div>
+    <div class="team-grid">
+      <div class="member">
+        <img src="Images/hesham.jpg" alt="Hesham Elhoseni">
+        <h3>Hesham Elhoseni</h3>
+        <p class="role">Project Lead | ROS Specialist</p>
+        <p class="description">Oversaw project development, integration of ROS, and team management.</p>
+      </div>
+      <div class="member">
+        <img src="Images/shady.jpg" alt="Shady Mohamed">
+        <h3>Shady Mohamed</h3>
+        <p class="role">AI Engineer | ROS Specialist</p>
+        <p class="description">Focused on AI system design and integration with ROS for autonomous navigation.</p>
+      </div>
+      <div class="member">
+        <img src="Images/shady.jpg" alt="Shady Mohamed">
+        <h3>Shady Mohamed</h3>
+        <p class="role">AI Engineer | ROS Specialist</p>
+        <p class="description">Focused on AI system design and integration with ROS for autonomous navigation.</p>
+      </div>
+      <div class="member">
+        <img src="Images/shady.jpg" alt="Shady Mohamed">
+        <h3>Shady Mohamed</h3>
+        <p class="role">AI Engineer | ROS Specialist</p>
+        <p class="description">Focused on AI system design and integration with ROS for autonomous navigation.</p>
+      </div>
+      <div class="member">
+        <img src="Images/saad.jpg" alt="Saad Salama">
+        <h3>Saad Salama</h3>
+        <p class="role">AI Engineer | UX Designer & Mobile App Developer</p>
+        <p class="description">Led the design of user experience and developed the mobile application for project control.</p>
+      </div>
+      <div class="member">
+        <img src="Images/sherif.jpg" alt="Sherif Mohamed">
+        <h3>Sherif Mohamed</h3>
+        <p class="role">AI Engineer | Computer Vision Specialist</p>
+        <p class="description">Responsible for implementing computer vision algorithms for object detection and tracking.</p>
+      </div>
+      <div class="member">
+        <img src="Images/alaa.jpg" alt="Alaa Eldein">
+        <h3>Alaa Eldein</h3>
+        <p class="role">AI Engineer | Computer Vision Specialist</p>
+        <p class="description">Worked on computer vision systems for real-time obstacle detection and scene recognition.</p>
+      </div>
     </div>
-</section>
+  </section>
 
+  
 
-  <!-- Popup Modal -->
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <div id="caption"></div>
-    <div class="navigation">
-      <button id="prev">Previous</button>
-      <button id="next">Next</button>
-    </div>
-  </div>
+ 
   <footer>
     <p>© 2023 RoboDovo Project. All Rights Reserved.</p>
   </footer>
